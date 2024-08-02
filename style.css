@@ -340,6 +340,9 @@ footer {
   .embed h1 {
     font-size: 20px;
   }
+  .embed {
+    text-align: center;
+  }
 }
 
 @media (max-width: 678px) {
