@@ -9,16 +9,19 @@
       src="https://kit.fontawesome.com/fceb68fb66.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <!-- Header -->
     <div class="header">
       <p>
-        Enjoy your <br />
+        Enjoy <br />
         ~ Dream Vacation ~
       </p>
-      <h1>Travel to Türkiye 🛩️</h1>
-      <button><a href="">See More</a></button>
+      <h1 class="type">Travel to Türkiye 🛩️</h1>
+      <button>
+        <a href="">See More</a>
+      </button>
     </div>
 
     <!-- Why Turkey -->
@@ -78,44 +81,46 @@
     <hr />
 
     <!-- Mosque -->
-    <div class="mosque">
-      <h1>~ Famous Mosques ~</h1>
-      <div class="mosque-gallary">
-        <div class="mosque-container">
-          <img
-            src="https://cdn-v2.theculturetrip.com/610x407/wp-content/uploads/2018/07/shutterstock_785232904.webp"
-            alt=""
-          />
-          <div class="t">
-            <h2>Sultanahmet Mosque</h2>
-            <p>Blue Mosque in Sultanahmet, Istanbul, Turkey (1616)</p>
+    <div class="mosque-container-box">
+      <div class="mosque">
+        <h1>~ Famous Mosques ~</h1>
+        <div class="mosque-gallary">
+          <div class="mosque-container">
+            <img
+              src="https://cdn-v2.theculturetrip.com/610x407/wp-content/uploads/2018/07/shutterstock_785232904.webp"
+              alt=""
+            />
+            <div class="t">
+              <h2>Sultanahmet Mosque</h2>
+              <p>Blue Mosque in Sultanahmet, Istanbul, Turkey (1616)</p>
+            </div>
+          </div>
+          <div class="mosque-container">
+            <img
+              src="https://www.istanbulturkeytravel.com/wp-content/uploads/2020/05/istanbul-28.jpeg"
+              alt=""
+            />
+            <div class="t">
+              <h2>Hagia Sophia Mosque</h2>
+              <p>One of the greatest houses of worship in Istanbul (537 AD)</p>
+            </div>
+          </div>
+          <div class="mosque-container">
+            <img
+              src="https://www.istanbulturkeytravel.com/wp-content/uploads/2020/09/x2.jpg"
+              alt=""
+            />
+            <div class="t">
+              <h2>Çamlıca Republic Mosque</h2>
+              <p>
+                Built in the 16th century by the great Ottoman architect, Mimar
+                Sinan
+              </p>
+            </div>
           </div>
         </div>
-        <div class="mosque-container">
-          <img
-            src="https://www.istanbulturkeytravel.com/wp-content/uploads/2020/05/istanbul-28.jpeg"
-            alt=""
-          />
-          <div class="t">
-            <h2>Hagia Sophia Mosque</h2>
-            <p>One of the greatest houses of worship in Istanbul (537 AD)</p>
-          </div>
-        </div>
-        <div class="mosque-container">
-          <img
-            src="https://www.istanbulturkeytravel.com/wp-content/uploads/2020/09/x2.jpg"
-            alt=""
-          />
-          <div class="t">
-            <h2>Çamlıca Republic Mosque</h2>
-            <p>
-              Built in the 16th century by the great Ottoman architect, Mimar
-              Sinan
-            </p>
-          </div>
-        </div>
+        <button>See More</button>
       </div>
-      <button>See More</button>
     </div>
 
     <hr />
@@ -312,4 +317,12 @@
       </div>
     </footer>
   </body>
+  <script>
+    let type = document.querySelector(".type");
+    new Typewriter(".type", {
+      strings: type.innerHTML,
+      autoStart: true,
+      cursor: "",
+    });
+  </script>
 </html>

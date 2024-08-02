@@ -103,6 +103,18 @@ footer {
   padding: 40px;
   font-size: 40px;
 }
+.why-container {
+  background-image: url(./src/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.mosque-container-box {
+  background-image: url(./src/mosque-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
 .why-turkey {
   padding: 20px 80px;
   display: grid;
